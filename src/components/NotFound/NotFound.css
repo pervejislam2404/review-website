@@ -1,0 +1,11 @@
+.body {
+    background-color: #4B3869;
+    color: #FF0000;
+    height: 100%;
+}
+
+.error {
+    font-size: 5rem;
+    line-height: 50rem;
+    font-weight: bolder;
+}
