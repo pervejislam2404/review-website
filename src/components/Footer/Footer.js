@@ -17,7 +17,8 @@ const Footer = () => {
                 <h5><i class="fab fa-youtube-square mx-2 text-danger fs-3"></i>YouTube</h5>
             </div>
             <div className="col-4 pt-5">
-                <h1>this is three</h1>
+                <h1>Enrolled</h1>
+                <h1 className="fw-bold">20,425</h1>
             </div>
         </div>
     );

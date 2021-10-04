@@ -1,6 +1,8 @@
 import React from 'react';
-import { Card, NavLink } from 'react-bootstrap';
+import {NavLink} from 'react-router-dom'
+import { Card } from 'react-bootstrap';
 import Details from '../Details/Details';
+
 
 
 const Course = ({course}) => {
@@ -23,7 +25,7 @@ const Course = ({course}) => {
                     <i class="fas fa-star-half-alt text-warning"></i>
                     <i class="fas fa-star-half-alt text-warning pe-2"></i>
                     {rate}</h5>
-                   <NavLink to="/about">Details</NavLink>
+                   <NavLink to={`/details/${title}`} className="text-decoration-none bg-primary text-white px-3 py-1 fs-5 rounded my-3">Details</NavLink>
                 </Card.Body>
            </Card>
         </div>

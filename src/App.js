@@ -31,7 +31,9 @@ function App() {
          <Route exact path="/details/:titleName">
            <Details></Details>
          </Route>
-         
+         <Route exact path="/details">
+           <Details></Details>
+         </Route>
          <Route exact path="*">
            <NotFound></NotFound>
          </Route>

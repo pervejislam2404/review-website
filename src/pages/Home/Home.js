@@ -21,8 +21,9 @@ const handleRoute=() => {
             <div className="row">
                <div className="banner">
                  
-                   <div className="text-white">
-                   this is two
+                   <div className="text-white p-5 m-5">
+                 <h1 >LEARN YOUR<br></br> FAVORITE <span className="text-warning">COURSE</span><br></br> FROM ONLINE</h1>
+                 <Button onClick={handleRoute} className="btn btn-primary my-4 fw-bold">GET STARTED</Button>
                    </div>
                </div>
               
