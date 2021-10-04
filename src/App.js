@@ -28,12 +28,10 @@ function App() {
          <Route exact path="/about">
            <About></About>
          </Route>
-         <Route exact path="/details">
+         <Route exact path="/details/:titleName">
            <Details></Details>
          </Route>
-         <Route exact path="course/:title">
-          <Course></Course>
-         </Route>
+         
          <Route exact path="*">
            <NotFound></NotFound>
          </Route>

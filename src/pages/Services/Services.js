@@ -12,7 +12,7 @@ console.log(courses)
     return (
         <div className="row  px-5 py-3">
            {
-               courses.map(item=> <Course course={item}/>)
+               courses.map(item=> <Course course={item}></Course>)
            }
         </div>
     );

@@ -1,14 +1,12 @@
 import React from 'react';
-import { Card,Button } from 'react-bootstrap';
-import {useHistory} from 'react-router-dom';
+import { Card, NavLink } from 'react-bootstrap';
+import Details from '../Details/Details';
+
 
 const Course = ({course}) => {
-    const history = useHistory()
+   
     const {location,title,subtitle,img} = course;
-    const handleClick=(titleName) =>{
-console.log(titleName)
-history.push("course/titleName")
-    }
+    
     return (
         <div className="col-3 overflow-hidden">
            <Card>
@@ -19,7 +17,7 @@ history.push("course/titleName")
                     <Card.Text>
                    {subtitle}
                     </Card.Text>
-                    <Button onClick={()=>handleClick(title)} variant="primary">Details</Button>
+                   <NavLink to="/about">Details</NavLink>
                 </Card.Body>
            </Card>
         </div>
