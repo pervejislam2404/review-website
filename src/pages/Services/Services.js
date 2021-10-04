@@ -10,6 +10,8 @@ fetch('./MainCourses.json')
 
     },[])
     return (
+        // all-courses-displaying
+        
         <div className="row  px-5 py-3">
            {
                courses.map((item,index)=> <Course key={index} course={item}></Course>)

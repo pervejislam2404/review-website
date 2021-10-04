@@ -30,6 +30,8 @@ const handleRoute=() => {
             </div>
          <div className="row px-5 home">
          {
+            //  home-section-card-design
+            
                item.map((course,index)=> {return(
                <Card key={index} className="col-6 p-5 border-0">
                         <Card.Img variant="top" src={course.img} />

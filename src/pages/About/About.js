@@ -5,6 +5,9 @@ import { Button } from 'react-bootstrap';
 const About = () => {
     return (
         <div>
+
+            {/* about-section */}
+            
           <div className="head row">
              <div className="col-6 text-white">
                <h1>Empower Yourself</h1>

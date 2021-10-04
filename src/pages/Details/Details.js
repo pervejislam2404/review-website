@@ -14,13 +14,18 @@ const Details = () => {
      },[])
     
      const matched = course?.find(mt => mt.title === titleName)
-     
-     const {location,title,img,durations,courses,type,rate,price,description} = matched || {};
+    const {location,title,img,durations,courses,type,rate,price,description} = matched || {};
+
+// route-changing-function
+
      const handleClick=() => {
          history.push('/services')
      }
       
     return (
+
+        // details-of-every-single-selected-products
+
         <div className="mx-auto">
           {matched &&  <Card className="border-0 mx-auto my-4" style={{ width: '30rem' }}>
             <Card.Img variant="top" src={img} />
@@ -35,6 +40,9 @@ const Details = () => {
                     <h5>{courses}</h5>
                 </div>
                 <p>{type}</p>
+
+                {/* icon-for-rating */}
+
                 <h5><i className="fas fa-star-half-alt text-warning"></i>
                     <i className="fas fa-star-half-alt text-warning"></i>
                     <i className="fas fa-star-half-alt text-warning"></i>

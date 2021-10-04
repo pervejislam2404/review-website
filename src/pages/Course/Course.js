@@ -1,7 +1,7 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
 import { Card } from 'react-bootstrap';
-import Details from '../Details/Details';
+
 
 
 
@@ -12,6 +12,9 @@ const Course = ({course}) => {
     return (
         <div className="col-3 overflow-hidden">
            <Card>
+
+               {/* designing-the-course */}
+
                 <Card.Img variant="top" src={img} />
                 <Card.Body className="bg-light">
                     <Card.Title>{title}</Card.Title>
@@ -26,6 +29,9 @@ const Course = ({course}) => {
                     <i className="fas fa-star-half-alt text-warning"></i>
                     <i className="fas fa-star-half-alt text-warning pe-2"></i>
                     {rate}</h5>
+
+                    {/* routing-through-useparams */}
+                    
                    <NavLink to={`/details/${title}`} className="text-decoration-none bg-primary text-white px-3 py-1 fs-5 rounded my-3">Details</NavLink>
                 </Card.Body>
            </Card>

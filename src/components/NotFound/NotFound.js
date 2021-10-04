@@ -3,9 +3,11 @@ import './NotFound.css'
 
 const NotFound = () => {
     return (
-        <div className="body text-center">
-
-            <h1 className="error">404</h1>
+        // error-message-display
+        
+        <div className="display text-center">
+        
+            <h1 className="error">page not found <br/>404</h1>
         </div>
     );
 };

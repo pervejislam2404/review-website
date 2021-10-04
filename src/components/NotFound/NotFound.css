@@ -1,4 +1,4 @@
-.body {
+.display {
     background-color: #4B3869;
     color: #FF0000;
     height: 100%;
@@ -6,6 +6,7 @@
 
 .error {
     font-size: 5rem;
-    line-height: 50rem;
+    line-height: 15rem;
     font-weight: bolder;
+    margin-bottom: 0;
 }
