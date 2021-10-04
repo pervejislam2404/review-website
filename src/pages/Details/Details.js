@@ -10,14 +10,14 @@ const Details = () => {
      fetch('./MainCourses.json')
      .then(res=> res.json())
      .then(info =>setTitle(info))
-
-    },[item])
+     const matched =  title || [].find(c => c.title === titleName)
+     setItem(matched)
+    },[])
     
-    const matched =  title.find(c => c.title === titleName)
-    console.log(title);
+console.log(item)
     return (
         <div>
-            <h1>{matched?.description}ddd</h1>
+            <h1>{item}ddd</h1>
         </div>
     );
 };
