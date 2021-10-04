@@ -4,13 +4,19 @@ import './Footer.css'
 const Footer = () => {
     return (
         <div className="m-0 footer row px-5 text-white">
-            <div className="col-4">
-                <h1>this is one</h1>
+            <div className="col-4 pt-5">
+                <h1>Best Course</h1>
+                <h6>UCL (University College London)</h6>
+                <h6>King's College London</h6>
+                <h6>Macquarie University</h6>
             </div>
-            <div className="col-4">
-                <h1>this is two</h1>
+            <div className="col-4 pt-5">
+                <h1>Contact</h1>
+                <h4><i class="fab fa-facebook mx-2 text-primary fs-3"></i>Facebook</h4>
+                <h5><i class="fab fa-instagram-square mx-2 text-danger fs-3"></i>Instagram</h5>
+                <h5><i class="fab fa-youtube-square mx-2 text-danger fs-3"></i>YouTube</h5>
             </div>
-            <div className="col-4">
+            <div className="col-4 pt-5">
                 <h1>this is three</h1>
             </div>
         </div>

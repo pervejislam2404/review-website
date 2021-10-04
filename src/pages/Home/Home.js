@@ -2,8 +2,10 @@ import React,{useState,useEffect} from 'react';
 import './Home.css'
 // import banner from './banner.jpg'
 import { Card,Button } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 const Home = () => {
+    const history = useHistory()
     const [item,setItem] = useState([])
 useEffect(()=>{
 fetch('./MyCourses.json')
@@ -11,9 +13,22 @@ fetch('./MyCourses.json')
 .then(data => setItem(data))
 },[])
 
+const handleRoute=() => {
+    history.push("/services")
+}
     return (
-        <div className="row px-5 home">
-           {
+        <div >
+            <div className="row">
+               <div className="banner">
+                 
+                   <div className="text-white">
+                   this is two
+                   </div>
+               </div>
+              
+            </div>
+         <div className="row px-5 home">
+         {
                item.map(course=> {return(
                <Card className="col-6 p-5 border-0">
                         <Card.Img variant="top" src={course.img} />
@@ -23,11 +38,12 @@ fetch('./MyCourses.json')
                             <Card.Text>
                         {course.description}
                             </Card.Text>
-                            <Button  variant="primary">Details</Button>
+                            <Button onClick={handleRoute} variant="primary">Details</Button>
                         </Card.Body>
               </Card>
                )})
            }
+         </div>
         </div>
     );
 };

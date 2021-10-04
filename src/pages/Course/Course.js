@@ -5,7 +5,7 @@ import Details from '../Details/Details';
 
 const Course = ({course}) => {
    
-    const {location,title,subtitle,img} = course;
+    const {location,title,subtitle,img,rate} = course;
     
     return (
         <div className="col-3 overflow-hidden">
@@ -17,6 +17,12 @@ const Course = ({course}) => {
                     <Card.Text>
                    {subtitle}
                     </Card.Text>
+                    <h5><i class="fas fa-star-half-alt text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning"></i>
+                    <i class="fas fa-star-half-alt text-warning pe-2"></i>
+                    {rate}</h5>
                    <NavLink to="/about">Details</NavLink>
                 </Card.Body>
            </Card>

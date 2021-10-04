@@ -8,7 +8,7 @@ import NotFound from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Details from './pages/Details/Details';
-import Course from './pages/Course/Course';
+// import Course from './pages/Course/Course';
 
 function App() {
   return (
