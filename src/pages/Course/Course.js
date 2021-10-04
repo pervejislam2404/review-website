@@ -7,7 +7,7 @@ import Details from '../Details/Details';
 
 const Course = ({course}) => {
    
-    const {location,title,subtitle,img,rate} = course;
+    const {location,title,subtitle,img,rate,price} = course;
     
     return (
         <div className="col-3 overflow-hidden">
@@ -19,11 +19,12 @@ const Course = ({course}) => {
                     <Card.Text>
                    {subtitle}
                     </Card.Text>
-                    <h5><i class="fas fa-star-half-alt text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning"></i>
-                    <i class="fas fa-star-half-alt text-warning pe-2"></i>
+                    <h3>price {price}</h3>
+                    <h5><i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning pe-2"></i>
                     {rate}</h5>
                    <NavLink to={`/details/${title}`} className="text-decoration-none bg-primary text-white px-3 py-1 fs-5 rounded my-3">Details</NavLink>
                 </Card.Body>

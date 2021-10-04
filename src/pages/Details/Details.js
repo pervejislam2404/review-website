@@ -1,23 +1,50 @@
 import React,{useState,useEffect} from 'react';
-import {useParams} from 'react-router-dom'
+import {useParams,useHistory} from 'react-router-dom'
+import { Card,Button } from 'react-bootstrap';
 
 const Details = () => {
     const {titleName} = useParams()
-    const [item,setItem] = useState(titleName)
-    const [title,setTitle] = useState([])
+    const [course,setCourse] = useState([])
+    const history = useHistory()
 
     useEffect(() =>{
-     fetch('./MainCourses.json')
-     .then(res=> res.json())
-     .then(info =>setTitle(info))
-     const matched =  title || [].find(c => c.title === titleName)
-     setItem(matched)
-    },[])
+        fetch('https://raw.githubusercontent.com/pervejislam2404/json-data/main/myData.json')
+        .then(res => res.json())
+     .then(info =>setCourse(info))
+     },[])
     
-console.log(item)
+     const matched = course?.find(mt => mt.title === titleName)
+     
+     const {location,title,img,durations,courses,type,rate,price,description} = matched || {};
+     const handleClick=() => {
+         history.push('/services')
+     }
+      
     return (
-        <div>
-            <h1>{item}ddd</h1>
+        <div className="mx-auto">
+          {matched &&  <Card className="border-0 mx-auto my-4" style={{ width: '30rem' }}>
+            <Card.Img variant="top" src={img} />
+            <Card.Body className="bg-light shadow-lg">
+                <p>{location}</p>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>
+               {description}
+                </Card.Text>
+                <div className="d-flex justify-content-between">
+                    <h5>{durations}</h5>
+                    <h5>{courses}</h5>
+                </div>
+                <p>{type}</p>
+                <h5><i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning"></i>
+                    <i className="fas fa-star-half-alt text-warning pe-2"></i>
+                    {rate}</h5>
+                    <h3>course fee {price}</h3>
+                <Button onClick={handleClick} variant="primary">Go Back</Button>
+            </Card.Body>
+            </Card>}
         </div>
     );
 };

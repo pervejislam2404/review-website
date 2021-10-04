@@ -23,15 +23,15 @@ const handleRoute=() => {
                  
                    <div className="text-white p-5 m-5">
                  <h1 >LEARN YOUR<br></br> FAVORITE <span className="text-warning">COURSE</span><br></br> FROM ONLINE</h1>
-                 <Button onClick={handleRoute} className="btn btn-primary my-4 fw-bold">GET STARTED</Button>
+                 <Button onClick={handleRoute} className="btn btn-primary my-4 fw-bold">GET START</Button>
                    </div>
                </div>
               
             </div>
          <div className="row px-5 home">
          {
-               item.map(course=> {return(
-               <Card className="col-6 p-5 border-0">
+               item.map((course,index)=> {return(
+               <Card key={index} className="col-6 p-5 border-0">
                         <Card.Img variant="top" src={course.img} />
                         <Card.Body className="bg-light">
                             <Card.Title>{course.title}</Card.Title>
@@ -39,7 +39,8 @@ const handleRoute=() => {
                             <Card.Text>
                         {course.description}
                             </Card.Text>
-                            <Button onClick={handleRoute} variant="primary">Details</Button>
+                            <h4>price {course.price}</h4>
+                            <Button onClick={handleRoute} variant="primary">See More</Button>
                         </Card.Body>
               </Card>
                )})

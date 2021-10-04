@@ -8,7 +8,8 @@
         "durations": "3 hrs per week",
         "courses": "2 weeks",
         "type": "free digital upgrade",
-        "rate": "4.9"
+        "rate": "4.9",
+        "price": "$400"
     },
     {
         "location": "UCL (University College London)",
@@ -20,7 +21,8 @@
         "durations": "3 hrs per week",
         "courses": "5 weeks",
         "type": "Premium",
-        "rate": "4.9"
+        "rate": "4.9",
+        "price": "$250"
     },
     {
         "location": "European University Institute (EUI)",
@@ -31,18 +33,20 @@
         "durations": "3 hrs per week",
         "courses": "3 weeks",
         "type": "included in Unlimited",
-        "rate": "4.4"
+        "rate": "4.4",
+        "price": "$3800"
     },
     {
         "location": "King's College London",
         "title": "English for Healthcare",
         "subtitle": "Get an introduction to cultural diplomacy, learning what it means, how it works, and its importance in today's polarised world.",
         "description": "This course is an introduction to cultural diplomacy for people working in foreign policy, public policy, arts, culture and heritage.",
-        "img": "https://ugc.futurelearn.com/uploads/images/7a/70/thumbnail_7a7029db-ed6d-421d-b5af-43489aca87fa.jpg",
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB_A27pcbQOX6y1nQBAITjFyMP39SQRdxHGw&usqp=CAU",
         "durations": "3 hrs per week",
         "courses": "4 weeks",
         "type": "free digital upgrade",
-        "rate": "4.7"
+        "rate": "4.7",
+        "price": "$400"
     },
     {
         "location": "University of Oslo",
@@ -53,7 +57,8 @@
         "durations": "5 hrs per week",
         "courses": "4 weeks",
         "type": "Included in Unlimited",
-        "rate": "4.9"
+        "rate": "4.9",
+        "price": "$420"
     },
     {
         "location": "Royal Holloway, University of London & Vocal Eyes",
@@ -64,7 +69,8 @@
         "durations": "3 hrs per week",
         "courses": "4 weeks",
         "type": "Included in Unlimited",
-        "rate": "new"
+        "rate": "new",
+        "price": "$290"
     },
     {
         "location": "Nelson Marlborough Institute of Technology (NMIT) & Te Pūkenga",
@@ -75,7 +81,8 @@
         "durations": "2 hrs per week",
         "courses": "4 weeks",
         "type": "Included in Unlimited",
-        "rate": "4.2"
+        "rate": "4.2",
+        "price": "$340"
     },
     {
         "location": "University of Groningen",
@@ -86,7 +93,8 @@
         "durations": "3 hrs per week",
         "courses": "4 weeks",
         "type": "Included in Unlimited",
-        "rate": "4.9"
+        "rate": "4.9",
+        "price": "$350"
     },
     {
         "location": "UCL (University College London)",
@@ -97,7 +105,8 @@
         "durations": "2 hrs per week",
         "courses": "6 weeks",
         "type": "Premium corse",
-        "rate": "4.6"
+        "rate": "4.6",
+        "price": "$310"
     },
     {
         "location": "Coventry University",
@@ -108,6 +117,7 @@
         "durations": "3 hrs per week",
         "courses": "2 weeks",
         "type": "Included in Unlimited",
-        "rate": "4.8"
+        "rate": "4.8",
+        "price": "$300"
     }
 ]

@@ -7,7 +7,7 @@ const [courses,setCourses] = useState([])
 fetch('./MainCourses.json')
 .then(res => res.json())
 .then(items => setCourses(items))
-console.log(courses)
+
     },[])
     return (
         <div className="row  px-5 py-3">

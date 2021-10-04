@@ -12,15 +12,16 @@ const Footer = () => {
             </div>
             <div className="col-4 pt-5">
                 <h1>Contact</h1>
-                <h4><i class="fab fa-facebook mx-2 text-primary fs-3"></i>Facebook</h4>
-                <h5><i class="fab fa-instagram-square mx-2 text-danger fs-3"></i>Instagram</h5>
-                <h5><i class="fab fa-youtube-square mx-2 text-danger fs-3"></i>YouTube</h5>
+                <h4><i className="fab fa-facebook mx-2 text-primary fs-3"></i>Facebook</h4>
+                <h5><i className="fab fa-instagram-square mx-2 text-danger fs-3"></i>Instagram</h5>
+                <h5><a href="https://www.youtube.com/channel/UCshoy95dEwB5V3FYcmvadLQ"><i className="fab fa-youtube-square mx-2 text-danger fs-3"></i>YouTube</a></h5>
             </div>
             <div className="col-4 pt-5">
                 <h1>Enrolled</h1>
                 <h1 className="fw-bold">20,425</h1>
             </div>
         </div>
+        
     );
 };
 

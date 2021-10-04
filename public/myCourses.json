@@ -5,7 +5,8 @@
         "img": "https://ugc.futurelearn.com/uploads/images/6d/8f/header_small_6d8f7820-355b-4047-977a-74ad29d5906f.jpg",
         "durations": "6 weeks",
         "courses": "3 courses",
-        "type": "introductory"
+        "type": "introductory",
+        "price": "$350"
 
     },
     {
@@ -15,7 +16,8 @@
         "img": "https://ugc.futurelearn.com/uploads/images/ff/a4/header_small_ffa4f41a-76b0-4794-9eb7-0f738ed818f9.jpg",
         "durations": "13 weeks",
         "courses": "3 courses",
-        "type": "introductory"
+        "type": "introductory",
+        "price": "$400"
     },
     {
         "name": "British Council",
@@ -24,7 +26,8 @@
         "img": "https://ugc.futurelearn.com/uploads/images/ff/a4/header_small_ffa4f41a-76b0-4794-9eb7-0f738ed818f9.jpg",
         "durations": "12 weeks",
         "courses": "3 courses",
-        "type": "introductory"
+        "type": "introductory",
+        "price": "$380"
     },
     {
         "name": "Shanghai International Studies University (SISU)",
@@ -33,6 +36,7 @@
         "img": "https://ugc.futurelearn.com/uploads/images/2a/03/header_small_2a036a87-627d-4dd2-bf48-2f1967e9a801.jpg",
         "durations": "13 weeks",
         "courses": "3 courses",
-        "type": "introductory"
+        "type": "introductory",
+        "price": "$390"
     }
 ]
