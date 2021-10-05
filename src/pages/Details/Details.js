@@ -27,7 +27,7 @@ const Details = () => {
         // details-of-every-single-selected-products
 
         <div className="mx-auto">
-          {matched &&  <Card className="border-0 mx-auto my-4" style={{ width: '30rem' }}>
+          {matched &&  <Card className="border-0 mx-auto my-4 shadow-lg" style={{ width: '30rem' }}>
             <Card.Img variant="top" src={img} />
             <Card.Body className="bg-light shadow-lg">
                 <p>{location}</p>

@@ -8,9 +8,9 @@ const Home = () => {
     const history = useHistory()
     const [item,setItem] = useState([])
 useEffect(()=>{
-fetch('./MyCourses.json')
+fetch('https://raw.githubusercontent.com/pervejislam2404/json-data/main/myData.json')
 .then(res=> res.json())
-.then(data => setItem(data))
+.then(data => setItem(data.slice(0,4)))
 },[])
 
 const handleRoute=() => {
@@ -35,13 +35,22 @@ const handleRoute=() => {
                item.map((course,index)=> {return(
                <Card key={index} className="col-6 p-5 border-0">
                         <Card.Img variant="top" src={course.img} />
-                        <Card.Body className="bg-light">
+                        <Card.Body className="bg-light  shadow">
                             <Card.Title>{course.title}</Card.Title>
-                           <h4>{course.name}</h4>
+                           <h4>{course.location}</h4>
                             <Card.Text>
                         {course.description}
                             </Card.Text>
                             <h4>price {course.price}</h4>
+                            <h5>
+                                <i className="fas fa-star-half-alt text-warning"></i>
+                                <i className="fas fa-star-half-alt text-warning"></i>
+                                <i className="fas fa-star-half-alt text-warning"></i>
+                                <i className="fas fa-star-half-alt text-warning"></i>
+                                <i className="fas fa-star-half-alt text-warning pe-2"></i>
+                                 {course.rate}
+                            
+                            </h5>
                             <Button onClick={handleRoute} variant="primary">See More</Button>
                         </Card.Body>
               </Card>
